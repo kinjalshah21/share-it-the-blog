@@ -25,14 +25,14 @@ export class BlogService {
                 content,
                 featuredImageID,
                 status,
-                userID,
+                userID,   
             }
         )
     } catch (error) {
-        console.log("Appwrite service :: createPost :: error",error) 
+        console.log("Appwrite service :: createPost :: error",error , title,slug,content,featuredImageID,status,userID ) 
     }
-
   }
+
 
   async updatePost(slug,{title,content,featuredImageID,status}){
     try {
@@ -44,7 +44,7 @@ export class BlogService {
                 title,
                 content,
                 featuredImageID,
-                status
+                status,
             }
         )
     } catch (error) {
@@ -132,3 +132,4 @@ export class BlogService {
 
 const blogService = new BlogService();
 export default blogService;
+
