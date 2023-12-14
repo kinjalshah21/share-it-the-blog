@@ -29,7 +29,7 @@ export class BlogService {
             }
         )
     } catch (error) {
-        console.log("Appwrite service :: createPost :: error",error , title,slug,content,featuredImageID,status,userID ) 
+        console.log("Appwrite service :: createPost :: error",error ) 
     }
   }
 

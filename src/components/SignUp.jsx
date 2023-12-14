@@ -29,17 +29,17 @@ function SignUp() {
   return (
     <div className="flex items-center justify-center">
       <div
-        className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}
+        className={`mx-auto w-full max-w-lg bg-[#BDD5EA] rounded-xl p-10 border border-[#495867]`}
       >
-        <div className="mb-2 flex justify-center">
+        <div className="mb-2 flex justify-center ml-4">
           <span className="inline-block w-full max-w-[100px]">
-            <Logo width="100%" />
+            <Logo  width="50%" />
           </span>
         </div>
         <h2 className="text-center text-2xl font-bold leading-tight">
           Sign up to create account
         </h2>
-        <p className="mt-2 text-center text-base text-black/60">
+        <p className="mt-2 text-center text-base text-black/80">
           Already have an account?&nbsp;
           <Link
             to="/login"
@@ -82,7 +82,7 @@ function SignUp() {
             />
              <Button
              type="submit"
-             className="w-full"
+             className="w-full bg-blue-900"
              >
             Create Account
              </Button>
